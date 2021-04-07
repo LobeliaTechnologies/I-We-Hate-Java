@@ -15,7 +15,7 @@ public class test{
       Map<String, Function<Object, Object>> map = new HashMap<String, Function<Object, Object>>(){{
           put("print", test::print);
       }};
-      map.get("print").apply("print!");
+      print(map.get("print").apply("print!"));
       map.get("print").apply(1234567890);
       print("End");
     }
